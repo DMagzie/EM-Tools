@@ -1,0 +1,20 @@
+name: Upload Deliverables to Dropbox
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  dropbox_upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Upload files to Dropbox
+        uses: tsub/serverless-dropbox-upload@v1.0.1
+        with:
+          dropbox_token: ${{ secrets.DROPBOX_TOKEN }}
+          local_file_path: Deliverables/*
+          dropbox_destination_path: /EM_Tools/Snapshots/
+
