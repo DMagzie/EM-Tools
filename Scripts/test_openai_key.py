@@ -4,15 +4,13 @@ import os
 # Set OpenAI API key from environment variable
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-# Test if the API key works by making a simple request using the new API format
+# Test if the API key works by making a simple request using the old API format
 try:
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",  # or "gpt-4" if available
-        messages=[
-            {"role": "system", "content": "You are a helpful assistant."},
-            {"role": "user", "content": "Can you confirm my OpenAI API key is working?"}
-        ]
+    response = openai.Completion.create(
+        engine="gpt-3.5-turbo",  # Switch to gpt-3.5-turbo (instead of deprecated text-davinci-003)
+        prompt="Hello, OpenAI! Test my API key.",
+        max_tokens=50
     )
-    print("API Key is working. Response:", response['choices'][0]['message']['content'])
+    print("API Key is working. Response:", response.choices[0].text.strip())
 except Exception as e:
     print("Error with the API key:", e)
