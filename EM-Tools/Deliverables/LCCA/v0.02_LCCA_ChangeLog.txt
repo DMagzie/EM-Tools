@@ -1,0 +1,25 @@
+## LCCA Tool Version 0.02 Changelog
+
+### New Features
+
+- **Enhanced User Interface:** The user interface has been redesigned for improved navigation and user experience.
+- **New Calculation Module:** Added a new module that offers more detailed calculations and customizable parameters.
+- **Export/Import Capabilities:** Users can now export their data to Excel or CSV files, and import data from these file types as well.
+
+### Improvements
+
+- **Performance:** Enhanced the speed and efficiency of the calculations, resulting in a faster, more responsive tool.
+- **Security:** Improved security measures to ensure user data is protected and secure.
+- **Documentation:** Updated the user guide and FAQs to reflect the new features and improvements.
+
+### Bug Fixes
+
+- Fixed an issue where the tool would crash when handling large data sets.
+- Resolved a bug that caused incorrect calculations under certain conditions.
+- Addressed a problem where some users were unable to save their progress.
+
+### Deprecated 
+
+- Removed the old calculation module due to the introduction of the new, more efficient one. 
+
+Please note, while we have tested this version thoroughly, it's always possible that we've missed something. If you encounter any issues, please contact our support team. We appreciate your feedback and will do our best to resolve any problems as quickly as possible.
