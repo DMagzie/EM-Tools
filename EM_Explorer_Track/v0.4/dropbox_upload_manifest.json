@@ -1,0 +1,16 @@
+{
+    "track": "EM_Explorer_Track",
+    "version": "v0.4",
+    "deliverables": [
+        {
+            "local_path": "EM_Explorer_Track/v0.4/outputs/qaqc_report.csv",
+            "dropbox_path": "/EM_Explorer_Track/v0.4/QAQC/qaqc_report.csv",
+            "description": "QA/QC anomaly report (dummy data)"
+        },
+        {
+            "local_path": "EM_Explorer_Track/v0.4/outputs/qaqc_map.png",
+            "dropbox_path": "/EM_Explorer_Track/v0.4/QAQC/qaqc_map.png",
+            "description": "Heatmap visualization of spatial QA/QC issues"
+        }
+    ]
+}

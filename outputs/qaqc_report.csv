@@ -1,0 +1,6 @@
+Zone,Cooling Load (kBtu/sf),Flagged
+Zone1,32.8,True
+Zone2,25.9,False
+Zone3,16.7,True
+Zone4,18.8,False
+Zone5,31.7,True
