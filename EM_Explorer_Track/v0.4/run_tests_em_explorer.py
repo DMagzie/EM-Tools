@@ -6,7 +6,7 @@ from modules import qaqc_heatmap
 class TestQAQCTool(unittest.TestCase):
     def test_generate_qaqc_outputs(self):
         # Run the dummy generator
-        csv_path, png_path = qaqc_heatmap.generate_dummy_qaqc_report(output_dir="outputs")
+        csv_path, png_path = qaqc_heatmap.generate_dummy_qaqc_report(output_dir="EM_Explorer_Track/v0.4/outputs")
 
         # Check files exist
         self.assertTrue(os.path.exists(csv_path), f"Missing: {csv_path}")
