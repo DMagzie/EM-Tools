@@ -1,0 +1,16 @@
+{
+  "deliverables": [
+    {
+      "local_path": "Reference_Docs/v0.4_2025-07-09/standards/ashrae_90_1_summary.md",
+      "dropbox_path": "/Reference_Docs/v0.4_2025-07-09/standards/ashrae_90_1_summary{date}.md"
+    },
+    {
+      "local_path": "Reference_Docs/v0.4_2025-07-09/qa_qc_notes/qaqc_methodology.txt",
+      "dropbox_path": "/Reference_Docs/v0.4_2025-07-09/qa_qc_notes/qaqc_methodology{date}.txt"
+    },
+    {
+      "local_path": "Reference_Docs/v0.4_2025-07-09/outputs/reference_table.csv",
+      "dropbox_path": "/Reference_Docs/v0.4_2025-07-09/outputs/reference_table{date}.csv"
+    }
+  ]
+}
