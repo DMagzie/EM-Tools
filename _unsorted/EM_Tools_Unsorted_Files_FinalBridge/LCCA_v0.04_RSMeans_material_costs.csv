@@ -1,0 +1,8 @@
+AssemblyID,Category,Subtype,MaterialName,Unit,UnitCost_USD,RegionAdjustment
+WALL001,Envelope,Exterior Wall,CMU with EIFS,SF,14.25,1.00
+WALL002,Envelope,Exterior Wall,Metal Stud w/ R-13 Batt,SF,10.50,1.00
+ROOF001,Envelope,Roof,Single Ply Membrane + Tapered Insul,SF,12.90,1.00
+ROOF002,Envelope,Roof,Built-Up Roof + R-30 Insul,SF,11.75,1.00
+FLOOR001,Envelope,Slab,"4"" Slab on Grade",SF,6.10,1.00
+WINDOW001,Envelope,Fenestration,"Aluminum Frame, Double Pane",SF,28.50,1.00
+DOOR001,Envelope,Doors,Insulated Hollow Metal Door,EA,410.00,1.00

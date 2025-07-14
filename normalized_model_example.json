@@ -1,0 +1,58 @@
+{
+  "project_name": "Sample Revit Import",
+  "source_file": "office_model.hbjson",
+  "source_type": "hbjson",
+  "ghg_tags": [
+    "R13_WALL",
+    "STEEL_FRAME",
+    "TPO_ROOF"
+  ],
+  "zones": [
+    {
+      "id": "Zone_A",
+      "area_ft2": 1200,
+      "floor_height_ft": 10,
+      "wwr": 0.35,
+      "orientation": "N",
+      "space_type": "Office",
+      "hvac_system": "PVAV",
+      "assembly": "WALL_R13+ROOF_R30+GLASS_SHGC_0.27",
+      "loads": {
+        "lighting_w_per_ft2": 0.9,
+        "plug_w_per_ft2": 0.8,
+        "occupancy_density_sf_per_person": 100
+      }
+    },
+    {
+      "id": "Zone_B",
+      "area_ft2": 850,
+      "floor_height_ft": 9,
+      "wwr": 0.4,
+      "orientation": "S",
+      "space_type": "Conference",
+      "hvac_system": "SplitDX",
+      "assembly": "WALL_R19+ROOF_R38+GLASS_SHGC_0.22",
+      "loads": {
+        "lighting_w_per_ft2": 1.1,
+        "plug_w_per_ft2": 0.5,
+        "occupancy_density_sf_per_person": 50
+      }
+    }
+  ],
+  "envelope": {
+    "walls_r_value": 13,
+    "roof_r_value": 30,
+    "window_u_value": 0.35,
+    "window_shgc": 0.27
+  },
+  "lca": {
+    "lca_tool": "OneClickLCA",
+    "material_mapping_version": "v1.0",
+    "potential_ec3_tags": [
+      "steel_column",
+      "glass_fa\u00e7ade"
+    ]
+  },
+  "qa_flags": [],
+  "date_generated": "2025-07-09"
+}

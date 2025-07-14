@@ -1,1 +1,0 @@
-# Placeholder for econ1_generator.py

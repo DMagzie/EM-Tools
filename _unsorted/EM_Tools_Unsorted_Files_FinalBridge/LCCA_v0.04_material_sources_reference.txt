@@ -1,0 +1,7 @@
+# Material Sources and Methodology Reference
+- RSMeans Unit Cost Data
+- Title 24 JA4 Material Definitions
+- Normalized Model Terminology
+- Material Translation Mapping
+- Limitations & Next Steps
+Updated: July 11, 2025

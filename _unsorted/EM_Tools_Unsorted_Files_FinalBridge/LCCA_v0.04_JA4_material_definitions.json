@@ -1,0 +1,53 @@
+{
+  "Exterior Walls": {
+    "JA4_WALL_1": {
+      "Description": "Wood stud wall with R-13 cavity insulation and stucco exterior",
+      "R_Value": 13,
+      "Layers": [
+        "Stucco",
+        "Building Paper",
+        "R-13 Batt",
+        "Gypsum Board"
+      ]
+    },
+    "JA4_WALL_2": {
+      "Description": "Metal stud wall with continuous insulation",
+      "R_Value": 15,
+      "Layers": [
+        "Metal Cladding",
+        "CI R-5",
+        "Air Barrier",
+        "Metal Stud",
+        "Gypsum"
+      ]
+    }
+  },
+  "Roofs": {
+    "JA4_ROOF_1": {
+      "Description": "Low slope roof with R-30 insulation above deck",
+      "R_Value": 30,
+      "Layers": [
+        "Membrane",
+        "Tapered Insul",
+        "Deck"
+      ]
+    },
+    "JA4_ROOF_2": {
+      "Description": "Attic roof with R-38 insulation",
+      "R_Value": 38,
+      "Layers": [
+        "Shingles",
+        "Sheathing",
+        "Ventilation Space",
+        "R-38 Batt"
+      ]
+    }
+  },
+  "Fenestration": {
+    "JA4_WIN_1": {
+      "Description": "Dual-pane low-e window, aluminum frame",
+      "U_Factor": 0.35,
+      "SHGC": 0.25
+    }
+  }
+}

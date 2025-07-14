@@ -1,1 +1,0 @@
-# Placeholder for format_lcca_inputs.py
