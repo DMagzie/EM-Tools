@@ -1,17 +1,25 @@
 # EM-Tools
 
-GitHub-ready structure for EM Tools, supporting testing and deployment workflows.
+**EM-Tools** is an open-source energy, carbon, and cost modeling framework. This repository provides tools for translating models, running simulations, generating financial metrics, and comparing scenarios.
 
-## Usage
+## 💻 Getting Started
 
+1. Install dependencies:
 ```bash
 pip install -r requirements.txt
+```
+
+2. Run tests:
+```bash
 pytest
 ```
 
-## Structure
+3. Run the app (if Streamlit GUI exists):
+```bash
+streamlit run path/to/app.py
+```
 
-- `Tool_Groups/`: Modules and logic
-- `tests/`: Unit tests
-- `.github/workflows/`: GitHub Actions CI
-- `requirements.txt`: Python dependencies
+## ✅ GitHub Actions
+
+- Automatic testing and linting on push
+- Coverage reporting with `pytest --cov`

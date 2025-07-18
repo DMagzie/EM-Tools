@@ -1,4 +1,4 @@
-name: Run Tests (pytest)
+name: Python application
 
 on:
   push:
@@ -7,15 +7,14 @@ on:
     branches: [ main ]
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+    - uses: actions/checkout@v3
 
     - name: Set up Python
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v4
       with:
         python-version: '3.11'
 
@@ -24,6 +23,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Run tests
+    - name: Lint with ruff
       run: |
-        pytest
+        pip install ruff
+        ruff .
+
+    - name: Run tests with coverage
+      run: |
+        pip install pytest pytest-cov
+        pytest --cov=. --cov-report=term-missing
