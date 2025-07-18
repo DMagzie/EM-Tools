@@ -1,7 +1,0 @@
-# Ignore sensitive and unnecessary files
-*.env
-*.xlsx
-*.xlsm
-*.csv
-__pycache__/
-.DS_Store
