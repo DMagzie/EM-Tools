@@ -1,5 +1,7 @@
 # EM-Tools
 
+[![codecov](https://codecov.io/github/DMagzie/EM-Tools/graph/badge.svg?token=H8CTJ85BIL)](https://codecov.io/github/DMagzie/EM-Tools)
+
 **EM-Tools** is an open-source energy, carbon, and cost modeling framework. This repository provides tools for translating models, running simulations, generating financial metrics, and comparing scenarios.
 
 ## 💻 Getting Started
