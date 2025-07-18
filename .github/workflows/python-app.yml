@@ -33,5 +33,10 @@ jobs:
         pip install pytest pytest-cov
         pytest --cov=.
 
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }} # Optional for public repos
+
     - name: Complete job
       run: echo "Build and tests complete."
