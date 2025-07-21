@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+
+# VSCode / IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# MacOS
+.DS_Store
+
+# Test outputs
+test-results/
+
+# Coverage
+.coverage
+coverage.xml
+htmlcov/
+.cache/
+
+# Streamlit logs
+.streamlit/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Excel cache or generated outputs
+*.xlsm
+*.xlsx
+~$*.xls*
+
+# GitHub workflow cache
+.github/workflows/__pycache__/
+
+# OS junk
+Thumbs.db
+ehthumbs.db
+
+# Ignore .zip archives and temp backups
+*.zip
+*.bak
