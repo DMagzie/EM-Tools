@@ -1,0 +1,7 @@
+
+    <OpenStudioModel>
+        <Building name="Test Building" climate_zone="3C" area_m2="1500" />
+        <Zones count="2" />
+        <Systems count="1" type="PTAC" />
+    </OpenStudioModel>
+    

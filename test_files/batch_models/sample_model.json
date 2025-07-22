@@ -1,0 +1,65 @@
+{
+  "project_id": "test_project_001",
+  "building": {
+    "name": "Test Building",
+    "climate_zone": "3C",
+    "area_m2": 1500,
+    "stories": 3,
+    "type": "Multifamily"
+  },
+  "zones": [
+    {
+      "zone_id": "Zone1",
+      "area_m2": 500,
+      "schedules": {
+        "occupancy": "Weekday"
+      },
+      "system_type": "PTAC"
+    },
+    {
+      "zone_id": "Zone2",
+      "area_m2": 1000,
+      "schedules": {
+        "occupancy": "Weekday"
+      },
+      "system_type": "PTAC"
+    }
+  ],
+  "hvac_systems": [
+    {
+      "system_id": "HVAC1",
+      "type": "PTAC",
+      "served_zones": [
+        "Zone1",
+        "Zone2"
+      ]
+    }
+  ],
+  "schedules": {
+    "occupancy": {
+      "type": "Fraction",
+      "values": [
+        0.1,
+        0.3,
+        0.7,
+        0.9,
+        0.9,
+        0.7,
+        0.4,
+        0.2
+      ]
+    }
+  },
+  "materials": [
+    {
+      "id": "mat001",
+      "name": "Concrete",
+      "carbon_kg_per_m2": 150
+    },
+    {
+      "id": "mat002",
+      "name": "Vinyl Flooring",
+      "carbon_kg_per_m2": 250
+    }
+  ]
+}

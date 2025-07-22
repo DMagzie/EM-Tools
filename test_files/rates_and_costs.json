@@ -1,0 +1,7 @@
+{
+  "electricity_rate": 0.15,
+  "natural_gas_rate": 1.2,
+  "capital_cost_per_m2": 2000,
+  "maintenance_percent": 0.01,
+  "discount_rate": 0.05
+}

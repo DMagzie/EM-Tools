@@ -1,0 +1,1 @@
+-- Simulated result for sample_model

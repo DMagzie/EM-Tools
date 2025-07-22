@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CBECCModel>
+  <Building name="Test Building" climateZone="3C" type="Multifamily"/>
+  <Zones>
+    <Zone id="Zone1" area="500" />
+    <Zone id="Zone2" area="1000" />
+  </Zones>
+</CBECCModel>
