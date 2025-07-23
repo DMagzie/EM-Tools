@@ -30,6 +30,10 @@ jobs:
     - name: Print PYTHONPATH for debugging
       run: echo "PYTHONPATH=$PYTHONPATH"
 
+    - name: Clear __pycache__
+      run: |
+        find . -name "*.pyc" -exec rm -f {} \;
+
     - name: Run tests with coverage
       run: |
         pytest --cov=emtools_mvp --cov-report xml:reports/coverage.xml
