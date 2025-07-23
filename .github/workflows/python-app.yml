@@ -34,6 +34,11 @@ jobs:
       run: |
         find . -name "*.pyc" -exec rm -f {} \;
 
+    - name: Run pre-commit hooks
+      run: |
+        pre-commit install
+        pre-commit run --all-files
+
     - name: Run tests with coverage
       run: |
         pytest --cov=emtools_mvp --cov-report xml:reports/coverage.xml

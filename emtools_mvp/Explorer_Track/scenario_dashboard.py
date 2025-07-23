@@ -1,9 +1,8 @@
 # emtools_mvp/Explorer_Track/scenario_dashboard.py
 
-import streamlit as st
 import pandas as pd
 import plotly.express as px
-import os
+import streamlit as st
 
 # Dummy dataset (to be replaced with parsed simulation results)
 DASHBOARD_DATA = """

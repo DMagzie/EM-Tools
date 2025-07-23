@@ -1,0 +1,29 @@
+# .ruff.toml
+
+# General settings
+line-length = 100
+target-version = "py311"
+
+# Ignore common folders
+exclude = ["venv/", ".venv/", "tests/helpers/", "build/", "dist/", "reports/"]
+
+# Linting rules
+[lint]
+select = [
+  "F",   # pyflakes (errors)
+  "E",   # pycodestyle (style errors)
+  "W",   # pycodestyle (warnings)
+  "I",   # isort (import order)
+  "N",   # pep8-naming
+  "UP",  # pyupgrade (for older idioms)
+]
+ignore = [
+  "E501",     # Don't enforce line-length errors
+  "F401",     # Ignore unused imports *for now* in modules
+  "N802",     # Allow non-snake_case function names temporarily
+]
+
+# Import sorting behavior
+[lint.isort]
+known-first-party = ["emtools_mvp"]
+force-single-line = false
