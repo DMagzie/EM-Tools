@@ -25,7 +25,7 @@ jobs:
         pip install -r requirements-dev.txt
 
     - name: Set PYTHONPATH for all steps
-      run: echo "PYTHONPATH=$(pwd)/emtools_mvp:$PYTHONPATH" >> $GITHUB_ENV
+      run: echo "PYTHONPATH=$(pwd):$PYTHONPATH" >> $GITHUB_ENV
 
     - name: Print PYTHONPATH for debugging
       run: echo "PYTHONPATH=$PYTHONPATH"
@@ -45,4 +45,3 @@ jobs:
         ruff check .
 
     - name: Complete job
-      run: echo "Build and tests complete."
