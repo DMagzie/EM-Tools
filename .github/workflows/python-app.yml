@@ -12,7 +12,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-      name: Checkout code
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -26,7 +25,7 @@ jobs:
         pip install -r requirements-dev.txt
 
     - name: Set PYTHONPATH for all steps
-      run: echo "PYTHONPATH=$(pwd):$PYTHONPATH" >> $GITHUB_ENV
+      run: echo "PYTHONPATH=$(pwd):$(pwd)/emtools_mvp:$PYTHONPATH" >> $GITHUB_ENV
 
     - name: Print PYTHONPATH for debugging
       run: echo "PYTHONPATH=$PYTHONPATH"
