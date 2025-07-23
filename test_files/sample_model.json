@@ -20,9 +20,9 @@
       "zone_id": "Zone2",
       "area_m2": 1000,
       "schedules": {
-        "occupancy": "Friday"
+        "occupancy": "Weekend"
       },
-      "system_type": "SplitDX"
+      "system_type": "Furnace & AC"
     }
   ],
   "hvac_systems": [
