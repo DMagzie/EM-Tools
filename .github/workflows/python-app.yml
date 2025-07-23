@@ -27,9 +27,12 @@ jobs:
     - name: Add project root to PYTHONPATH
       run: echo "PYTHONPATH=$(pwd)/emtools_mvp:$PYTHONPATH" >> $GITHUB_ENV
 
+    - name: Print PYTHONPATH
+      run: echo "PYTHONPATH=$PYTHONPATH"
+
     - name: Run tests with coverage
       run: |
-        pytest --cov=emtools_mvp --cov-report xml
+        pytest --cov=emtools_mvp --cov-report xml:reports/coverage.xml
 
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v5
