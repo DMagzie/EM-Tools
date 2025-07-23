@@ -12,6 +12,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+      name: Checkout code
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -45,3 +46,4 @@ jobs:
         ruff check .
 
     - name: Complete job
+      run: echo "Build and tests complete."
