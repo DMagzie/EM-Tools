@@ -25,7 +25,7 @@ jobs:
         pip install -r requirements-dev.txt
 
     - name: Add project root to PYTHONPATH
-      run: echo "PYTHONPATH=$PYTHONPATH:$(pwd)" >> $GITHUB_ENV
+      run: echo "PYTHONPATH=$(pwd)/emtools_mvp:$PYTHONPATH" >> $GITHUB_ENV
 
     - name: Run tests with coverage
       run: |
