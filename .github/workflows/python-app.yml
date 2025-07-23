@@ -24,15 +24,15 @@ jobs:
         pip install -r requirements.txt
         pip install -r requirements-dev.txt
 
-    - name: Add project root to PYTHONPATH
+    - name: Set PYTHONPATH for all steps
       run: echo "PYTHONPATH=$(pwd)/emtools_mvp:$PYTHONPATH" >> $GITHUB_ENV
 
-    - name: Print PYTHONPATH
+    - name: Print PYTHONPATH for debugging
       run: echo "PYTHONPATH=$PYTHONPATH"
 
     - name: Run tests with coverage
       run: |
-        PYTHONPATH=$(pwd)/emtools_mvp pytest --cov=emtools_mvp --cov-report xml:reports/coverage.xml
+        pytest --cov=emtools_mvp --cov-report xml:reports/coverage.xml
 
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v5
