@@ -32,7 +32,7 @@ jobs:
 
     - name: Run tests with coverage
       run: |
-        pytest --cov=emtools_mvp --cov-report xml:reports/coverage.xml
+        PYTHONPATH=$(pwd)/emtools_mvp pytest --cov=emtools_mvp --cov-report xml:reports/coverage.xml
 
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v5
