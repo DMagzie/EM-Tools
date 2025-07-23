@@ -46,4 +46,3 @@ All notable changes to this project will be documented in this file.
 - `export_to_osm.py` and `batch_run_openstudio.py`
 - QA logic and unmet hours validation
 - Reference model test cases
-

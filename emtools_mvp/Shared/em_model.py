@@ -1,7 +1,8 @@
 # emtools_mvp/shared/em_model.py
 
 import json
-from jsonschema import validate, ValidationError
+
+from jsonschema import ValidationError, validate
 
 # Basic schema definition for EM JSON
 EM_SCHEMA = {
@@ -52,7 +53,7 @@ if __name__ == "__main__":
     parser.add_argument("--input", required=True, help="Path to EM JSON file")
     args = parser.parse_args()
 
-    with open(args.input, 'r') as f:
+    with open(args.input) as f:
         model_data = json.load(f)
 
     valid, message = validate_em_model(model_data)

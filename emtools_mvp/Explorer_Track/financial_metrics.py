@@ -1,8 +1,9 @@
 # emtools_mvp/Explorer_Track/financial_metrics.py
 
-import streamlit as st
 import json
 import os
+
+import streamlit as st
 
 MODEL_PATH = "test_files/sample_model.json"
 RATES_PATH = "test_files/rates_and_costs.json"
@@ -10,7 +11,7 @@ RATES_PATH = "test_files/rates_and_costs.json"
 def load_json(path):
     if not os.path.exists(path):
         return {}
-    with open(path, 'r') as f:
+    with open(path) as f:
         return json.load(f)
 
 def calc_financial_metrics(area_m2, capital_cost_per_m2, o_and_m_percent, energy_cost, discount_rate=0.05, years=20):

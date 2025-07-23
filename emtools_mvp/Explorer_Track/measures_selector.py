@@ -1,15 +1,16 @@
 # emtools_mvp/Explorer_Track/measures_selector.py
 
-import streamlit as st
-import os
 import json
+import os
+
+import streamlit as st
 
 MODEL_PATH = "test_files/sample_model.json"
 MEASURES_FOLDER = "test_files/sample_measures/"
 
 
 def load_model(path):
-    with open(path, 'r') as f:
+    with open(path) as f:
         return json.load(f)
 
 def save_model(model, path):

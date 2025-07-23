@@ -4,6 +4,7 @@ import argparse
 import json
 import os
 
+
 # Minimal XML writer for CBECC IEF format (placeholder logic)
 def write_cbecc_xml(em_json, output_path):
     building = em_json.get("building", {})
@@ -34,7 +35,7 @@ def main():
     if not os.path.exists(args.input):
         raise FileNotFoundError(f"Missing: {args.input}")
 
-    with open(args.input, 'r') as f:
+    with open(args.input) as f:
         em_json = json.load(f)
 
     write_cbecc_xml(em_json, args.output)

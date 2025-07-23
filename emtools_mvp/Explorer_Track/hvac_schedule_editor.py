@@ -1,6 +1,7 @@
-import streamlit as st
 import json
 import os
+
+import streamlit as st
 
 # Path to the model file (ensure it's correct for your environment)
 MODEL_PATH = "test_files/sample_model.json"
@@ -9,7 +10,7 @@ def load_model(path):
     """
     Load the model from the specified path.
     """
-    with open(path, 'r') as f:
+    with open(path) as f:
         return json.load(f)
 
 def save_model(model, path):

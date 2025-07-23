@@ -1,12 +1,14 @@
 # simulation_engine_registry.py
 
-from typing import Callable, Optional
+from collections.abc import Callable
+from typing import Optional
+
 
 class SimulationEngine:
     def __init__(self, name: str,
                  export_func: Callable,
-                 run_func: Optional[Callable],
-                 parse_results_func: Optional[Callable]):
+                 run_func: Callable | None,
+                 parse_results_func: Callable | None):
         self.name = name
         self.export_func = export_func
         self.run_func = run_func

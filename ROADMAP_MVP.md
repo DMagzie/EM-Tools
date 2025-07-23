@@ -35,4 +35,3 @@ Establish end-to-end modeling flow: translation → baseline → scenario → ex
 - July 20–22: MVP testing and packaging
 - July 23–25: Validation + QA logic
 - July 28+: Begin Post-MVP Modules
-

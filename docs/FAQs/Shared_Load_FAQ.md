@@ -40,5 +40,5 @@ Shared loads are simulated and **allocated by floor area or other methods**, ena
 
 ## 📌 Key Takeaway
 
-> CUAC = Per-unit modeling only  
+> CUAC = Per-unit modeling only
 > This Track = CUAC + Optional Shared Load Simulation (for internal QA or cross-state modeling)

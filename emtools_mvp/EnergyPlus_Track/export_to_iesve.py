@@ -4,6 +4,7 @@ import argparse
 import json
 import os
 
+
 # Minimal IESVE MIT/INP text exporter (placeholder logic)
 def write_iesve_inputs(em_json, output_dir):
     os.makedirs(output_dir, exist_ok=True)
@@ -36,7 +37,7 @@ def main():
     if not os.path.exists(args.input):
         raise FileNotFoundError(f"Missing: {args.input}")
 
-    with open(args.input, 'r') as f:
+    with open(args.input) as f:
         em_json = json.load(f)
 
     write_iesve_inputs(em_json, args.output_folder)

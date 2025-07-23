@@ -1,8 +1,8 @@
 # emtools_mvp/EnergyPlus_Track/validate_openstudio_results.py
 
 import argparse
-import os
 import json
+import os
 
 # Placeholder validator that simulates EUI comparison
 
@@ -43,7 +43,7 @@ def main():
 
     sim_result = simulate_sql_parse(args.sql)
 
-    with open(args.json, 'r') as f:
+    with open(args.json) as f:
         baseline = json.load(f)
 
     report = compare_with_baseline(sim_result, baseline)

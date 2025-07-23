@@ -1,8 +1,9 @@
 # emtools_mvp/EnergyPlus_Track/export_to_osm.py
 
 import argparse
-import os
 import json
+import os
+
 
 # Placeholder OpenStudio translator (to be replaced with real implementation)
 def translate_to_osm(em_json):
@@ -31,7 +32,7 @@ def main():
     if not os.path.exists(args.input):
         raise FileNotFoundError(f"Input file not found: {args.input}")
 
-    with open(args.input, 'r') as f:
+    with open(args.input) as f:
         em_model = json.load(f)
 
     print("[INFO] Translating EM JSON to OSM format...")

@@ -1,7 +1,8 @@
 # simulation_gui_tab.py
 
-import streamlit as st
 import os
+
+import streamlit as st
 from simulation_engine_registry import SIMULATION_ENGINES
 
 st.header("🔧 Run Simulation")
