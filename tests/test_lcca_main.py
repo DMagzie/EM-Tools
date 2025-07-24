@@ -1,4 +1,4 @@
-from emtools_mvp.LCCA_Track import lcca_main_v0_05
+from lcca_track import lcca_main_v0_05
 
 
 def test_import():
