@@ -1,5 +1,5 @@
-from emtools_mvp.Explorer_Track import streamlit_app
+from explorer_track import streamlit_app
 
 
-def test_import():
-    assert streamlit_app is not None
+def test_streamlit_app_import():
+    assert hasattr(streamlit_app, "__doc__")

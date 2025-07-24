@@ -1,5 +1,5 @@
-from emtools_mvp.EM_Core_Tools import baseline_generator
+from em_core_tools import baseline_generator
 
 
-def test_import():
-    assert baseline_generator is not None
+def test_baseline_generator_import():
+    assert hasattr(baseline_generator, "__doc__")

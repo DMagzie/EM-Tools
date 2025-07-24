@@ -1,5 +1,5 @@
-from emtools_mvp.EnergyPlus_Track import export_to_iesve
+from energyplus_track import export_to_iesve
 
 
-def test_import():
-    assert export_to_iesve is not None
+def test_export_to_iesve_import():
+    assert hasattr(export_to_iesve, "__doc__")

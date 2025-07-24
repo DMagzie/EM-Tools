@@ -21,6 +21,7 @@ ignore = [
   "E501",     # Don't enforce line-length errors
   "F401",     # Ignore unused imports *for now* in modules
   "N802",     # Allow non-snake_case function names temporarily
+  "N999",     # Ignore name convention rules
 ]
 
 # Import sorting behavior

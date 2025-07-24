@@ -1,27 +1,30 @@
-# EM-Tools
-
-[![codecov](https://codecov.io/github/DMagzie/EM-Tools/graph/badge.svg?token=H8CTJ85BIL)](https://codecov.io/github/DMagzie/EM-Tools)
-
-**EM-Tools** is an open-source energy, carbon, and cost modeling framework. This repository provides tools for translating models, running simulations, generating financial metrics, and comparing scenarios.
-
-## 💻 Getting Started
-
-1. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-2. Run tests:
-```bash
-pytest
-```
-
-3. Run the app (if Streamlit GUI exists):
-```bash
-streamlit run path/to/app.py
-```
-
 ## ✅ GitHub Actions
 
 - Automatic testing and linting on push
 - Coverage reporting with `pytest --cov`
+
+## 🧹 Pre-Commit Hooks
+
+This project uses [pre-commit](https://pre-commit.com) to automatically enforce linting rules and code quality before every commit.
+
+### Setup
+
+1. Install development dependencies:
+   ```bash
+   pip install -r requirements-dev.txt
+   ```
+
+2. Install the Git hook:
+   ```bash
+   pre-commit install
+   ```
+
+3. To manually run all pre-commit checks on the entire repo:
+   ```bash
+   pre-commit run --all-files
+   ```
+
+The hook includes:
+- `ruff` for linting (Python syntax, style, and import order)
+- Automatic trailing whitespace and end-of-file fixes
+- YAML syntax checks
