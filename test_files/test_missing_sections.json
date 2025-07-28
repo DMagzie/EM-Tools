@@ -1,0 +1,110 @@
+{
+  "project_id": "test_project_001",
+  "building": {
+    "name": "Test Building",
+    "climate_zone": "3C",
+    "area_m2": 1500,
+    "stories": 3,
+    "type": "Multifamily"
+  },
+  "zones": [
+    {
+      "zone_id": "Zone1",
+      "area_m2": 500,
+      "schedules": {
+        "occupancy": "Weekday"
+      },
+      "system_type": "PTAC"
+    },
+    {
+      "zone_id": "Zone2",
+      "area_m2": 1000,
+      "schedules": {
+        "occupancy": "Weekend"
+      },
+      "system_type": "Furnace & AC"
+    }
+  ],
+  "hvac_systems": [
+    {
+      "system_id": "HVAC1",
+      "type": "PTAC",
+      "served_zones": [
+        "Zone1",
+        "Zone2"
+      ]
+    }
+  ],
+  "internal_loads": {
+    "Zone1": {
+      "occupancy_density": 0.1,
+      "lighting_w_per_m2": 10,
+      "equipment_w_per_m2": 15
+    },
+    "Zone2": {
+      "occupancy_density": 0.08,
+      "lighting_w_per_m2": 8,
+      "equipment_w_per_m2": 12
+    }
+  },
+  "schedules": {
+    "occupancy": {
+      "type": "Fraction",
+      "values": [
+        0.1,
+        0.3,
+        0.7,
+        0.9,
+        0.9,
+        0.7,
+        0.4,
+        0.2
+      ]
+    },
+    "lighting": {
+      "type": "Fraction",
+      "values": [
+        0.1,
+        0.2,
+        0.5,
+        0.8,
+        0.8,
+        0.6,
+        0.4,
+        0.2
+      ]
+    },
+    "hvac": {
+      "type": "Fraction",
+      "values": [
+        0.0,
+        0.2,
+        0.5,
+        1.0,
+        1.0,
+        0.7,
+        0.3,
+        0.1
+      ]
+    }
+  },
+  "materials": [
+    {
+      "id": "mat001",
+      "name": "Concrete",
+      "carbon_kg_per_m2": 150
+    },
+    {
+      "id": "mat002",
+      "name": "Vinyl Flooring",
+      "carbon_kg_per_m2": 250
+    }
+  ],
+  "scenario_measures": {
+    "sample_scenario": [
+      "dummy_measure.rb"
+    ]
+  },
+  "em_version": "v0.1",
+  "schema_version": "1.0"
+}

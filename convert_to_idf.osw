@@ -1,0 +1,5 @@
+{
+  "seed_file": "exports/model.osm",
+  "steps": [],
+  "name": "convert_to_idf"
+}

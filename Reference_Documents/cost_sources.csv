@@ -1,0 +1,5 @@
+source_name,agency,description,data_type,update_frequency
+RSMeans 2024,Gordian,Standard construction cost data,System + Material,Annual
+CEC 2022,California Energy Commission,Prescriptive baseline costs,System,Code Cycle
+HUD 2021,US HUD,Affordable housing material cost benchmarks,Material,3 Years
+NREL Q1 2023,NREL,Cost multipliers and renewable tech estimates,Escalation + System,Quarterly

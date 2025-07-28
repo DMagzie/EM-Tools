@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<CBECCProject><Building name="Test Building" climate_zone="3C" area_m2="1500.0" stories="3" type="Multifamily"><Zone id="Zone1" area_m2="500.0" system_type="PTAC" /><Zone id="Zone2" area_m2="1000.0" system_type="Furnace &amp; AC" /></Building></CBECCProject>

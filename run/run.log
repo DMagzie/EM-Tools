@@ -1,0 +1,8 @@
+[20:56:44.701861 FATAL] [BOOST_ASSERT] Assertion iddObject->type() != IddObjectType::Catchall failed on line 613 of bool openstudio::IdfFile::m_load(std::istream &, openstudio::ProgressBar *, bool) in file /Users/jenkins/git/OpenStudioFull/Openstudio/src/utilities/idf/IdfFile.cpp.
+[20:56:44.701956 ERROR] [utilities.idf.IdfFile] Could not parse a single valid object in file.
+[20:56:44.719143 WARN] [utilities.idf.IdfFile] Unrecognizable object type '<?xml version="1.0" encoding="UTF-8"?>'. Defaulting to 'Catchall'.
+[20:56:44.719176 WARN] [utilities.idf.IdfFile] Cannot find object type 'Catchall' in Idd. Placing data in Catchall object.
+[20:56:44.719238 ERROR] [utilities.idf.IdfFile] Could not parse a single valid object in file.
+[20:56:44.719484 ERROR] [openstudio.osversion.VersionTranslator] Unable to load Model with Version 0.7.0 IDD.
+[20:56:44.720167 ERROR] [openstudio.workflow.OSWorkflow] Found error in state 'Initialization' with message: 'Failed to load OSM file /Users/DavidM/Dropbox/EM-Tools/exports/model.osm
+'

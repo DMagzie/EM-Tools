@@ -1,0 +1,19 @@
+{
+   "completed_at" : "20250728T035644Z",
+   "completed_status" : "Fail",
+   "file_paths" :
+   [
+      "/Users/DavidM/Dropbox/EM-Tools/generated_files",
+      "./files",
+      "./weather",
+      "../../files",
+      "../../weather",
+      "./"
+   ],
+   "hash" : "AD3E8707",
+   "name" : "convert_to_idf",
+   "run_options" : null,
+   "seed_file" : "exports/model.osm",
+   "steps" : [],
+   "updated_at" : "20250728T035644Z"
+}
