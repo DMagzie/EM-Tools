@@ -1,24 +1,26 @@
 import streamlit as st
-from hvac_schedule_editor import run as run_editor
-from results_viewer import run as run_results
-from scenario_dashboard import run as run_dashboard
-from scenario_exporter import run as run_export
 
-st.set_page_config(page_title="EM Tools Explorer", layout="wide")
+try:
+    from hvac_schedule_editor import run as run_editor
+except ImportError:
+    run_editor = None
 
-st.sidebar.title("📊 EM Tools Navigation")
-tab = st.sidebar.radio("Navigate to:", [
-    "Dashboard",
-    "HVAC Editor",
-    "Export Scenarios",
-    "View Results"
-])
+def main():
+    st.title("EM-Tools Scenario Explorer")
 
-if tab == "Dashboard":
-    run_dashboard()
-elif tab == "HVAC Editor":
-    run_editor()
-elif tab == "Export Scenarios":
-    run_export()
-elif tab == "View Results":
-    run_results()
+    tabs = st.tabs(["Scenario Viewer", "Export Controls", "HVAC + Schedule Editor"])
+
+    with tabs[0]:
+        st.write("Scenario viewer content goes here.")
+
+    with tabs[1]:
+        st.write("Export control options go here.")
+
+    with tabs[2]:
+        if run_editor:
+            run_editor()
+        else:
+            st.warning("HVAC + Schedule Editor module not found.")
+
+if __name__ == "__main__":
+    main()
