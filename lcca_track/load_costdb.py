@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-def load_cost_database(file_path="Reference_Documents/CostDB_v0.05.xlsx"):
+def load_cost_database(file_path="test_files/mock_CostDB.xlsx"):
     """Load system and material cost data from Excel file."""
     xls = pd.ExcelFile(file_path)
     system_costs = pd.read_excel(xls, 'System Costs')
