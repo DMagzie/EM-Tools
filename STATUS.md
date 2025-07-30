@@ -2,7 +2,7 @@
 
 | Module                    | Track              | Purpose                                 | Status       | Notes                                      |
 |---------------------------|--------------------|------------------------------------------|--------------|---------------------------------------------|
-| baseline_generator.py     | EM Core Tools      | Generate ASHRAE/Title 24 compliant baselines | ✅ MVP Ready | Will be enhanced with multifamily logic     |
+| baseline_generator.py     | EM Core Tools       | Generate ASHRAE/Title 24 compliant baselines | ✅ MVP Ready | Will be enhanced with multifamily logic     |
 | scenario_manager.py       | EM Core Tools      | Define/edit baseline and design scenarios | ✅ MVP Ready | GUI integration in progress                 |
 | manual_j_module.py        | EM Core Tools      | Placeholder for load calcs (Manual J)     | ⚠️ Stub       | Post-MVP development                        |
 | export_to_iesve.py        | EnergyPlus Track   | Export to IESVE MIT + Apache files        | ⚠️ In Progress | Needs model mapping validation              |
